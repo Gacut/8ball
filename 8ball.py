@@ -1,4 +1,5 @@
-import random, sys     
+import random
+import sys     
 
 print('''
 
@@ -52,12 +53,11 @@ def getAnswer(answerNumber):
         return 'To nie wygląda zbyt dobrze'
     elif answerNumber == 9:
         return 'Bardzo wątpliwe'
-    
 
 print('Jestem magiczną bilą nr 8')
 print('Aby wyjść, wpisz "wyjdź"')
 while True:
-    r = random.randint(1,9)
+    r = random.randint(1, 9)
     print('Jakie jest twoje pytanie?')
     d = input()
     fortune = getAnswer(r)
@@ -68,5 +68,3 @@ while True:
     if d == 'wyjdź':
         sys.exit()
         break
-
-
